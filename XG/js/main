@@ -1,6 +1,0 @@
-function toggleNav() {
-  const sidebar = document.getElementById('sidebar');
-  const main = document.getElementById('main');
-  sidebar.classList.toggle('closed');
-  main.style.marginLeft = sidebar.classList.contains('closed') ? '0' : '220px';
-}
