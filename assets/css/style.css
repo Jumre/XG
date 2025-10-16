@@ -268,3 +268,104 @@ footer {
   background-color: #fff;
   color: #00d1ff;
 }
+
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .feature {
+    width: 45%;
+  }
+
+  .hero-overlay {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .sidebar.closed {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    padding: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-overlay {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .hero-overlay button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .partner-logos img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero-overlay {
+    font-size: 1.2rem;
+  }
+
+  .hero-overlay button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .testimonial {
+    font-size: 0.95rem;
+  }
+
+  .partner-logos {
+    gap: 1rem;
+  }
+
+  .partner-logos img {
+    width: 80px;
+  }
+}
