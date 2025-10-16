@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | XG Electricals</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Optional page-specific enhancements */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    .feature {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .feature h3 {
+      color: #00d1ff;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .feature p {
+      color: #555;
+      padding: 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    .shop-btn {
+      display: inline-block;
+      margin: 1rem 0 1.5rem;
+      background: #00d1ff;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .shop-btn:hover {
+      background: #009ec2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="hamburger" onclick="toggleNav()">&#9776;</span>
+    <img src="assets/images/XG.png" alt="XG Logo" class="logo" />
+    <div class="header-title">XG Electricals</div>
+  </header>
+
+  <nav class="sidebar closed" id="sidebar">
+    <h2>XG</h2>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="main-content" id="main">
+    <section class="section" id="products">
+      <h2>Our Products</h2>
+      <p>Click any product or tap “Shop Now” to chat with us directly on WhatsApp for inquiries and purchases.</p>
+
+      <div class="features">
+
+        <!-- Product 1 -->
+        <div class="feature">
+          <img src="assets/images/smart-switch.jpg" alt="Smart Switches">
+          <h3>Smart Switches</h3>
+          <p>Control your lighting and appliances remotely for a smarter home.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Smart%20Switches."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="feature">
+          <img src="assets/images/led-lighting.jpg" alt="LED Lighting">
+          <h3>LED Lighting</h3>
+          <p>Energy-saving bulbs and panels with superior brightness and longevity.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20LED%20Lighting."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="feature">
+          <img src="assets/images/surge-protector.jpg" alt="Surge Protectors">
+          <h3>Surge Protectors</h3>
+          <p>Keep your electronic devices safe from power fluctuations.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Surge%20Protectors."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="feature">
+          <img src="assets/images/extension-cable.jpg" alt="Extension Cables">
+          <h3>Extension Cables</h3>
+          <p>Heavy-duty and reliable extensions for both home and office.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Extension%20Cables."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="feature">
+          <img src="assets/images/distribution-board.jpg" alt="Distribution Boards">
+          <h3>Distribution Boards</h3>
+          <p>Organized, safe, and efficient power distribution systems.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Distribution%20Boards."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="feature">
+          <img src="assets/images/solar-panel.jpg" alt="Solar Panels">
+          <h3>Solar Panels</h3>
+          <p>Reliable renewable power solutions for homes and industries.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Solar%20Panels."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="feature">
+          <img src="assets/images/electrical-wire.jpg" alt="Electrical Wires">
+          <h3>Electrical Wires</h3>
+          <p>Top-quality insulated wires for safe and efficient connections.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Electrical%20Wires."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="feature">
+          <img src="assets/images/power-tools.jpg" alt="Power Tools">
+          <h3>Power Tools</h3>
+          <p>Durable drills, grinders, and saws for every professional need.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Power%20Tools."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="feature">
+          <img src="assets/images/electrical-sockets.jpg" alt="Electrical Sockets">
+          <h3>Electrical Sockets</h3>
+          <p>Modern, safe, and stylish sockets for every installation.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Electrical%20Sockets."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="feature">
+          <img src="assets/images/battery-inverter.jpg" alt="Battery Inverters">
+          <h3>Battery Inverters</h3>
+          <p>Uninterrupted power supply solutions for homes and offices.</p>
+          <a href="https://wa.me/254700489917?text=Hi%20XG%20Electricals!%20I'm%20interested%20in%20Battery%20Inverters."
+             class="shop-btn">Shop Now</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 XG Electricals. All rights reserved.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
