@@ -3,9 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | XG Electricals</title>
+  <title>Contact Us | XG Electricals</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-header h2 {
+      font-size: 2.2rem;
+      color: #00d1ff;
+      margin-bottom: 0.5rem;
+    }
+    .contact-header p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .contact-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    .contact-card h3 {
+      color: #00d1ff;
+      margin-bottom: 0.8rem;
+    }
+    .contact-card img {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 0.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #00d1ff;
+      border: none;
+      color: #000;
+      padding: 0.8rem 1.8rem;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background-color: #009fc4;
+    }
+    iframe {
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <span class="hamburger" onclick="toggleNav()">&#9776;</span>
@@ -20,15 +91,93 @@
     <a href="services.html">Services</a>
     <a href="projects.html">Projects</a>
     <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 
   <main class="main-content" id="main">
     <section class="section" id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: info@xgelectricals.co.ke</p>
-      <p>Phone: +254 712 345678</p>
-      <p>Location: Nairobi, Kenya</p>
+      <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>We’re always ready to connect — whether you need a quote, support, or just have a question!</p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div class="contact-grid">
+        <div class="contact-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" alt="Phone" />
+          <h3>Call Us</h3>
+          <p>+254 700 489 917</p>
+          <p>+254 722 123 456</p>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
+          <h3>Email Us</h3>
+          <p><a href="mailto:support@xgelectricals.co.ke">support@xgelectricals.co.ke</a></p>
+          <p><a href="mailto:sales@xgelectricals.co.ke">sales@xgelectricals.co.ke</a></p>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location" />
+          <h3>Find Us</h3>
+          <p>Kinoo, Kiambu County, Kenya</p>
+          <p>Visit our showroom or request a site consultation.</p>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+          <h3>Chat on WhatsApp</h3>
+          <a href="https://wa.me/254700489917" target="_blank" style="color:#00d1ff; font-weight:bold;">Message Us</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="section" style="margin-top:3rem;">
+        <h3 style="text-align:center;">Send Us a Message</h3>
+        <form action="#" method="POST" style="max-width:600px; margin:0 auto; text-align:left;">
+          <label for="name">Full Name</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+          <label for="email">Email Address</label><br />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="phone">Phone Number</label><br />
+          <input type="tel" id="phone" name="phone" placeholder="+254..." />
+
+          <label for="message">Your Message</label><br />
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="section" style="margin-top:4rem; text-align:center;">
+        <h3>Follow Us</h3>
+        <div style="display:flex; justify-content:center; gap:2rem; margin-top:1rem;">
+          <a href="https://facebook.com/xgelectricals" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" style="width:36px;" />
+          </a>
+          <a href="https://instagram.com/xgelectricals" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:36px;" />
+          </a>
+          <a href="https://linkedin.com/company/xgelectricals" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:36px;" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Embedded Map -->
+      <div class="section">
+        <h3 style="text-align:center;">Find Us on the Map</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Kinoo,+Kiambu,+Kenya&output=embed"
+          width="100%"
+          height="350"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </section>
   </main>
 
@@ -38,4 +187,4 @@
 
   <script src="js/main.js"></script>
 </body>
-</
+</html>
