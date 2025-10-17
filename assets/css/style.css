@@ -58,8 +58,9 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, transform 0.3s ease;
   overflow-x: hidden;
+  z-index: 2000; /* 🔥 makes sure it's above the carousel */
 }
 
 .sidebar h2 {
@@ -84,6 +85,7 @@ header {
 .sidebar.closed {
   width: 0;
   padding: 0;
+  transform: translateX(-100%); /* smooth slide-out on mobile */
 }
 
 /* ===== MAIN CONTENT ===== */
