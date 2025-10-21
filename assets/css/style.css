@@ -280,3 +280,34 @@ header {
   z-index: 3000; /* 🔥 stays above hero/carousel/sidebar */
 }
 
+
+
+.sidebar h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.5rem;
+  color: #00d1ff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sidebar hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #00d1ff;
+  transform: translateX(3px);
+}
+
